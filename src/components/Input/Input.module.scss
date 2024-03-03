@@ -1,0 +1,46 @@
+// focus:outline-none placeholder:italic placeholder:text-primary placeholder:text-xs
+.input {
+  width: 100%;
+  padding: 3px;
+  height: 4rem;
+  border: 1px solid #eceef2;
+  color: gray;
+  border-radius: 4px;
+  &::placeholder {
+    font-size: 1.4rem;
+    color: gray;
+  }
+  &:focus {
+    border: 1px solid #e3eaed;
+  }
+}
+.error {
+  color: var(--color-danger);
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  width: 100%;
+  font-weight: 400;
+  padding-top: 2px;
+  border-radius: 4px;
+  font-style: italic;
+  color: red;
+  &:focus {
+    outline: none;
+  }
+}
+.label {
+  display: block;
+  color: gray;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.required {
+  color: red;
+  margin-right: 6px;
+  margin-top: 10px;
+}

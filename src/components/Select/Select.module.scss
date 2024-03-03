@@ -1,0 +1,52 @@
+.wrap {
+    height: 4rem;
+    position: relative;
+
+    @media (max-width: 48em) {
+        height: auto;
+    }
+
+    & .label {
+        position: absolute;
+        top: 10px;
+        left: 25px;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        letter-spacing: 0.02em;
+        color: var(--color-gray);
+        opacity: 0.9;
+
+        &_required {
+            &::before {
+                display: inline-block;
+                margin-inline-end: 0.4rem;
+                color: var(--color-danger);
+                font-size: 1.2rem;
+                line-height: 1;
+                content: "*";
+            }
+        }
+    }
+
+    span + svg {
+        position: absolute;
+        top: 50%;
+        right: 24px;
+        transform: translateY(-50%);
+    }
+}
+
+.select {
+    border: none !important;
+    font-family: monospace;
+
+    &:focus {
+        border-color: transparent;
+    }
+}
+
+.error {
+    color: var(--color-danger);
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+}

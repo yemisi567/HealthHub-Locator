@@ -1,0 +1,57 @@
+{
+  "Header": {
+    "title": "Find the nearest hospital to you and make an appointment.",
+    "img": "img/app-image.webp",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+  },
+  "About": {
+    "paragraph": "CareFinder is a revolutionary app designed to simplify the way you discover hospitals and healthcare facilities in your vicinity. We understand the importance of quick access to medical assistance, and our app is crafted to meet your health-related needs seamlessly.",
+    "Why": [
+      "User-Friendly Interface",
+      "Real-Time Availability",
+      "Transparent Reviews and Ratings",
+      "Personalized Recommendations"
+    ],
+    "Why2": [
+      "Easy Appointment Scheduling",
+      "Emergency Assistance",
+      "Empowering Your Health Choices",
+      "Community Support"
+    ]
+  },
+
+  "Services": [
+    {
+      "icon": "fa fa-search",
+      "name": "Hospital and Clinic Search",
+      "text": "Effortlessly find hospitals, clinics, and healthcare centers near you. Our powerful search feature ensures you have access to a comprehensive directory of healthcare facilities."
+    },
+    {
+      "icon": "fa fa-user",
+      "name": "Specialized Healthcare Providers",
+      "text": "Explore a diverse range of specialized healthcare providers. Whether you're seeking a specific medical specialist or a particular service, CareFinder connects you with the right professionals."
+    },
+    {
+      "icon": "fa fa-cloud-download",
+      "name": "Emergency Services Locator",
+      "text": "In emergencies, every second counts. Use CareFinder to quickly locate the nearest emergency services, ensuring timely medical attention when it matters most."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "CareFinder has been a lifesaver for me! The ease of finding a nearby clinic, booking appointments, and receiving real-time updates has made managing my health so much simpler. Kudos to the CareFinder team for creating such a user-friendly and essential app!",
+      "name": "Richard Millie"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "I can't express enough how grateful I am for CareFinder. The emergency services locator saved precious minutes during a recent health crisis. The app's commitment to transparency and personalized recommendations has truly set it apart. Highly recommended",
+      "name": "Johnathan Millie"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "As a frequent traveler, having CareFinder on my phone is like having a reliable health companion wherever I go. Finding hospitals and healthcare providers in unfamiliar locations has never been easier. This app is a game-changer!",
+      "name": "John Millie"
+    }
+  ]
+}
