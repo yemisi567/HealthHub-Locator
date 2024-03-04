@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "ES2020",
+        "target": "ESNext",
         "useDefineForClassFields": true,
         "lib": ["ES2020", "DOM", "DOM.Iterable"],
         "module": "ESNext",
@@ -9,9 +9,8 @@
         "types": ["vitest/globals"],
 
         /* Bundler mode */
-        "moduleResolution": "bundler",
+        "moduleResolution": "Node",
         "allowSyntheticDefaultImports": true,
-        "allowImportingTsExtensions": true,
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noEmit": true,
@@ -19,10 +18,9 @@
 
         /* Linting */
         "strict": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
+        "noUnusedParameters": false,
         "noFallthroughCasesInSwitch": true
     },
-    "include": ["vite.config.ts", ".eslintrc.json", "src", "src/setupTest.ts"],
+    "include": ["vite.config.ts", ".eslintrc.cjs", "src", "src/setupTest.ts"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }

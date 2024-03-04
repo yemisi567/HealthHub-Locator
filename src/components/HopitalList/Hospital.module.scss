@@ -1,178 +1,189 @@
 .wrapper {
-    padding: 20px;
-    margin-top: 50px;
+  padding: 20px;
+  margin-top: 50px;
 }
 .header {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .statustype {
-    &_option {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+  &_option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-        & svg {
-            position: static;
-            transform: translateY(0);
-            opacity: 0;
-        }
-
-        &_selected {
-            color: var(--color-primary) !important;
-
-            svg {
-                position: static;
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
+    & svg {
+      position: static;
+      transform: translateY(0);
+      opacity: 0;
     }
 
-    &_value {
-        color: var(--color-gray) !important;
-        opacity: 0.8 !important;
-        & svg {
-            display: none;
-        }
+    &_selected {
+      color: var(--color-primary) !important;
+
+      svg {
+        position: static;
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
+  }
+
+  &_value {
+    color: var(--color-gray) !important;
+    opacity: 0.8 !important;
+    & svg {
+      display: none;
+    }
+  }
 }
 .hospital_filters {
-    width: 25%;
+  width: 25%;
+  margin-bottom: 2.3rem;
+
+  & > div {
+    flex-basis: calc(100% / 2);
+  }
+}
+@media (max-width: 40.625em) {
+  .hospital_filters {
+    width: 100%;
     margin-bottom: 2.3rem;
 
     & > div {
-        flex-basis: calc(100% / 2);
+      flex-basis: calc(100% / 2);
     }
+  }
 }
+
 .button_wrapper {
-    display: flex;
-    flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
 }
 .header_text {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: gray;
-    margin-bottom: 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: gray;
+  margin-bottom: 30px;
 }
 .fixed_pagination {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    display: flex;
-    align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  align-items: center;
 }
 .pg {
+  @media (max-width: 48em) {
+    justify-content: center;
+  }
+
+  &_centered {
+    justify-content: center;
+  }
+
+  &_left {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    &_center {
+      display: none;
+    }
+
     @media (max-width: 48em) {
-        justify-content: center;
+      display: none;
     }
+  }
 
-    &_centered {
-        justify-content: center;
+  &_text {
+    color: gray;
+
+    &_small {
+      text-transform: lowercase;
+      color: var(--color-gray);
+      margin-left: 0.5rem;
     }
+  }
 
-    &_left {
-        display: flex;
-        align-items: center;
-        font-weight: 500;
-        font-size: 1.4rem;
-        line-height: 1.9rem;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
+  &_value {
+    color: var(--color-black);
+    margin: 0 0.5rem;
+  }
 
-        &_center {
-            display: none;
+  &_right {
+    display: flex;
+    align-items: center;
+  }
+
+  &_navbtn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7rem;
+    letter-spacing: 0.004em;
+    text-transform: uppercase;
+    color: black;
+
+    &:disabled {
+      color: gray;
+
+      & svg {
+        & path {
+          fill: gray;
         }
+      }
+    }
+  }
 
-        @media (max-width: 48em) {
-            display: none;
-        }
+  &_prevbtn {
+    & svg {
+      margin-right: 30px;
     }
 
-    &_text {
-        color: gray;
-
-        &_small {
-            text-transform: lowercase;
-            color: var(--color-gray);
-            margin-left: 0.5rem;
-        }
+    &_addmargin {
+      margin-right: 30px;
     }
+  }
 
-    &_value {
-        color: var(--color-black);
-        margin: 0 0.5rem;
+  &_nextbtn {
+    & svg {
+      margin-left: 30px;
     }
+  }
+  &_pageactive {
+    color: var(--color-white) !important;
+    background-color: var(--color-primary) !important;
+  }
 
-    &_right {
-        display: flex;
-        align-items: center;
+  &_pagebtns {
+    display: flex;
+    align-items: center;
+    margin: 0 2.4rem;
+
+    & svg {
+      margin: 20px;
     }
-
-    &_navbtn {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.7rem;
-        letter-spacing: 0.004em;
-        text-transform: uppercase;
-        color: black;
-
-        &:disabled {
-            color: gray;
-
-            & svg {
-                & path {
-                    fill: gray;
-                }
-            }
-        }
-    }
-
-    &_prevbtn {
-        & svg {
-            margin-right: 30px;
-        }
-
-        &_addmargin {
-            margin-right: 30px;
-        }
-    }
-
-    &_nextbtn {
-        & svg {
-            margin-left: 30px;
-        }
-    }
-    &_pageactive {
-        color: var(--color-white) !important;
-        background-color: var(--color-primary) !important;
-    }
-
-    &_pagebtns {
-        display: flex;
-        align-items: center;
-        margin: 0 2.4rem;
-
-        & svg {
-            margin: 20px;
-        }
-    }
+  }
 }
 .nav_button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 2.2rem;
-    cursor: pointer;
-    color: gray;
-    border: none;
-    max-width: 100%;
-    width: auto;
-    &:disabled {
-        cursor: not-allowed;
-        opacity: 0.3;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.2rem;
+  cursor: pointer;
+  color: gray;
+  border: none;
+  max-width: 100%;
+  width: auto;
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+  }
 }

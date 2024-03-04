@@ -139,18 +139,20 @@ const LoginPage: React.FC = () => {
             </button>
           </form>
         </Card>
-      </div>
-      <div className={styles.border}>OR</div>
-      <div className={styles.button_wrapper}>
-        <button
-          onClick={() => signinWithGoogle()}
-          type="button"
-          className={cn(styles.button, styles.googlebtn)}
-          disabled={isSubmitting}
-        >
-          Continue with Google
-          <GoogleIcon />
-        </button>
+        <div>
+          <div className={styles.border}>OR</div>
+          <div className={styles.button_wrapper}>
+            <button
+              onClick={() => signinWithGoogle()}
+              type="button"
+              className={cn(styles.button, styles.googlebtn)}
+              disabled={isSubmitting}
+            >
+              Continue with Google
+              <GoogleIcon />
+            </button>
+          </div>
+        </div>
       </div>
     </>
   );

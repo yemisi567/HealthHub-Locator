@@ -95,7 +95,7 @@ const SiginUpPage: React.FC = () => {
               />
             </div>
             {/* Password Field */}
-            <div style={{ marginBottom: 40 }}>
+            <div style={{ marginBottom: 50 }}>
               <Input
                 {...register("password")}
                 label="Password"

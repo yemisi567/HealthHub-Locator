@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 
 export const Testimonials = (props) => {
@@ -17,7 +18,7 @@ export const Testimonials = (props) => {
                       <img src={d.img} alt="" />{" "}
                     </div>
                     <div className="testimonial-content">
-                      <p>"{d.text}"</p>
+                      <p>{d.text}</p>
                       <div className="testimonial-meta"> - {d.name} </div>
                     </div>
                   </div>

@@ -1,21 +1,22 @@
+import React from "react";
 import { render, screen } from "@testing-library/react";
-import { composeStories } from "@storybook/testing-react";
-import * as stories from "./Select.stories";
-
-const { Default, SelectWithError } = composeStories(stories);
+import Select from "./Select";
 
 describe("Select Component", () => {
-    it("renders select input", () => {
-        render(<Default />);
+  it("renders select input", () => {
+    render(<Select label={"select"} />);
 
-        expect(screen.getByRole("combobox")).toBeInTheDocument();
-    });
+    expect(screen.getByRole("combobox")).toBeInTheDocument();
+  });
 
-    it("renders error text", () => {
-        render(<SelectWithError {...SelectWithError.args} />);
-
-        expect(
-            screen.getByText(/Please select a diagnosis/i)
-        ).toBeInTheDocument();
-    });
+  it("renders error text", () => {
+    render(
+      <Select
+        label={"diagnosis"}
+        hasError={true}
+        errorText="Please select a diagnosis"
+      />
+    );
+    expect(screen.getByText(/Please select a diagnosis/i)).toBeInTheDocument();
+  });
 });

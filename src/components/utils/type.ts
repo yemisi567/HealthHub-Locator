@@ -1,4 +1,4 @@
-interface LandingPageData {
+export interface LandingPageData {
     Header: {
       title: string;
       img: string;
@@ -19,4 +19,15 @@ interface LandingPageData {
       text: string;
       name: string;
     }[];
+  }
+  export interface HospitalResponse {
+    name: string;
+    contact: string;
+    address: string;
+    emergencyServices?: boolean;
+    city: string;
+    state: string;
+    avatar?: string;
+    email: string;
+    more?: string;
   }
