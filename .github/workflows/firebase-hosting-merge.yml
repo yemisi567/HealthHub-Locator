@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: npm i --legacy-peer-deps
       - run: npm run lint && npm run build && npm run test
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
