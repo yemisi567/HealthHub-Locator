@@ -164,7 +164,7 @@ hr {
 }
 .btn-custom {
   font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #fff;
   background-color: #5ca9fb;
   background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);

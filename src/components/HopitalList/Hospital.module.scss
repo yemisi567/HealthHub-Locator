@@ -60,6 +60,21 @@
   display: flex;
   flex-direction: row-reverse;
 }
+@media (max-width: 40.625em) {
+  .button_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.add_csv {
+  margin-right: 20px !important;
+}
+@media (max-width: 40.625em) {
+  .add_csv {
+    margin-right: 0 !important;
+    margin-top: 10px !important;
+  }
+}
 .header_text {
   font-size: 16px;
   text-transform: uppercase;
