@@ -435,8 +435,7 @@ export default function HopsitalList() {
             Add Hospital
           </button>
           <button
-            style={{ marginRight: 20 }}
-            className="btn-custom"
+            className={cn(styles.add_csv, "btn-custom")}
             onClick={() => exportToExcel(hospitals, "hospitals.xlsx")}
           >
             Export to Csv
